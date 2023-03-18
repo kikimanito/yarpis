@@ -1,2 +1,2 @@
 # yarpis
-Yet Another Raspbery Pi Script
+Yet Another Raspbery Pi Idena Script
