@@ -37,9 +37,9 @@ sudo fallocate -l 1G /swapfile2 && sudo chmod 600 /swapfile2 && sudo mkswap /swa
 git clone https://github.com/idena-network/idena-go.git
 cd idena-go/
 git pull
-git checkout tags/v1.0.2-rc3 -b v1.0.2-rc3
+git checkout tags/v1.0.2 -b v1.0.2
 git pull
-go build -ldflags "-X main.version=1.0.2-rc3"
+go build -ldflags "-X main.version=1.0.2"
 cd ..
 
 # put your apikey below
@@ -51,4 +51,5 @@ sudo ufw allow 9009
 # Now you can connect Desktop app to your node using parameters 
 # Node address: http://192.168.0.5:9009
 # Node api key: 123
+# If you already have your node you need to put your nodekey in /datadir/keystore directory
 # As per guide: https://www.idena.io/guide#guide-issues-3, remote node logs can be found in the same directory where the Idena node is located: ./datadir/logs/output.log
